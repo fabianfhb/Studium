@@ -1,0 +1,292 @@
+* CSS Document */
+
+
+/* Font-Familie ist von der AUDI AG und wird hier nur für die Studienarbeit genutzt */  
+
+@font-face {
+    font-family: 'AudiType-Normal';
+    src: url('fonts/AudiType-Normal.eot');
+    src: url('fonts/AudiType-Normal.eot?#iefix') format('embedded-opentype'),
+         url('fonts/AudiType-Normal.woff') format('woff'),
+         url('fonts/AudiType-Normal.ttf') format('truetype'),
+         url('fonts/AudiType-Normal.svg#nunitobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AudiType-ExtendedNormal';
+    src: url('fonts/AudiType-ExtendedNormal.eot');
+    src: url('fonts/AudiType-ExtendedNormal.eot?#iefix') format('embedded-opentype'),
+         url('fonts/AudiType-ExtendedNormal.woff') format('woff'),
+         url('fonts/AudiType-ExtendedNormal.ttf') format('truetype'),
+         url('fonts/AudiType-ExtendedNormal.svg#nunitobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AudiType-Bold';
+    src: url('fonts/AudiType-Bold.eot');
+    src: url('fonts/AudiType-Bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/AudiType-Bold.woff') format('woff'),
+         url('fonts/AudiType-Bold.ttf') format('truetype'),
+         url('fonts/AudiType-Bold.svg#nunitolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AudiType-ExtendedBold';
+    src: url('fonts/AudiType-ExtendedBold.eot');
+    src: url('fonts/AudiType-ExtendedBold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/AudiType-ExtendedBold.woff') format('woff'),
+         url('fonts/AudiType-ExtendedBold.ttf') format('truetype'),
+         url('fonts/AudiType-ExtendedBold.svg#nunitoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+
+/* Start Dokumentenvoreinstellungen */
+
+html, body {
+    font-family: 'AudiType-Normal', Arial, sans-serif; 
+    color: #001d38;
+	background-color:#FFF;
+} 
+
+html, body, section, footer, header, div, article  {
+	margin:0;
+	padding:0;	
+	display:block;
+}
+
+h1, h2, h3 {
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom:20px;
+}
+
+h1 {
+	font-family: 'AudiType-ExtendedBold', Arial, sans-serif ; 	
+}
+
+h2 {
+	font-family:'AudiType-ExtendedNormal', Arial, sans-serif; 
+}
+
+p{
+	
+	font-family:'AudiType-Normal', Arial, sans-serif; 
+	font-size:15px ;
+	font-weight:normal;
+	line-height:24px;
+	
+}
+a {
+	color:#000;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#cc0033;
+	text-decoration:none;
+}
+
+li {
+	list-style-type: none;
+}
+
+/* Ende Dokumenvoreinstellungen */
+
+
+/* Besonderheiten für verschiedene Bildschirmgrößen */
+
+@media (min-width:800px) and (min-height:800px){
+	#css-zen-garden > div.page-wrapper > aside {
+		position:fixed;
+		height:15%;
+		width:100%;
+		right: 0;
+		top:0;
+		z-index:3;
+		overflow:scroll;
+	}
+	#zen-intro {
+		top:15%;
+		position:fixed;
+		z-index: 1;
+	}
+	#zen-intro > header > h1 {
+		font-size:24px;
+	    width: 80%;
+	}
+	#zen-summary, #zen-preamble {
+		width: 80%;
+		margin-top:5%;
+	}
+	#zen-summary{
+		margin-left: 18%;
+	}
+	#zen-intro > header > h2 {
+	    width: 20%;
+	    font-size: 12px;
+	    margin-top: -20px;
+	    margin-left:-10px;
+	}
+	
+	#zen-supporting {
+	    position: absolute;
+		top:100%;
+		z-index: 2;
+	}
+}
+
+
+@media (min-width:1200px){
+	#zen-intro{
+		top:0;
+	}
+	#zen-intro > header > h1 {
+	    font-size: 50px;
+	    width: 50%;
+	}
+	
+	#zen-intro > header > h2 {
+	    width: 10%;
+	    font-size: 20px;
+	    margin-top: -20px;
+	    margin-left:-10px;
+	}
+	#zen-summary {
+	    width: 30%;
+	    bottom: 0;
+	    right:0;
+	    margin-left:0;
+	}
+	#css-zen-garden > div.page-wrapper > aside {
+	    width: 50%;
+	    overflow: scroll;
+	    border-bottom: 10px;
+	    padding: 2%;
+	}
+	#zen-preamble {
+	    position: absolute;
+    	width: 52%;
+	}
+	#zen-supporting {
+	}
+		
+	#zen-summary {
+	    position: absolute;
+   }
+   
+	#css-zen-garden > div.page-wrapper > aside {
+		height:40%;
+		width:40%;
+		top:0;
+		right: 0;
+	}
+  }
+
+
+@media (min-width:1600px) and (min-height:900px) {
+	#zen-intro > header > h1 {
+	    font-size: 76px;
+	}
+	#zen-intro > header > h2 {
+	    width: 12%;
+	    font-size: 35px;
+	    margin-top: -40px;
+	}
+	#css-zen-garden > div.page-wrapper > aside {
+		height:40%;
+		width:40%;
+		top:0;
+	}
+}
+
+#css-zen-garden {
+    padding: 2%;
+    margin: 0px;
+}
+#css-zen-garden > div.page-wrapper > aside {
+	    background-color: #C4D2EE;
+  
+}
+#css-zen-garden > div.page-wrapper > aside > div > * {
+
+    float: left;
+    width: 33%;
+}
+#zen-intro {
+    background-color: rgba(196,238,224,0.2);
+    height: 100%;
+    width: 96%;
+}
+#zen-intro > header > h1 {
+    margin-top: 10%;
+}
+
+#zen-intro > header > h2 {
+	    float: left;
+	    text-align: center;
+	    color: #888;
+	}
+#zen-intro > header {
+    padding-left: 3%;
+}
+#zen-preamble {
+    bottom: 10%;
+    margin-left: -2%;
+    background-color: rgba(156, 226, 203, 0.3);
+    padding-left: 5%;
+}
+#zen-supporting {
+    top: 100%;
+    margin-left: 2%;
+    width: 88%;
+    padding: 2%;
+    background-color: rgba(196,238,224,0.95);
+    box-shadow: rgb(255, 255, 255) 25px -25px 67px, #fff -25px 0px 67px;
+}
+#zen-supporting > * {
+    width: 50%;
+    background-color: white;
+    margin-bottom: 2%;
+    padding: 2%;
+    border-radius: 0 0 40px;
+    box-shadow: rgba(204, 204, 204, 0.69) 5px 5px 7px;
+}
+#zen-supporting > footer {
+    width: 96%;
+    border-radius: 40px 40px 40px;
+    margin-bottom: 0;
+    margin-top: 10%;
+}
+#zen-explanation {
+    margin-left: -3%;
+    margin-top: -3%;
+}
+#zen-benefits {
+    border-radius: 0 0 0 40px;
+    padding-right: 22%;
+    margin-left: 29%;
+}
+#zen-participation {
+    border-radius: 40px 0 0;
+    margin-bottom: 0.5%;
+    width: 50%;
+    margin-left: 29%;
+    z-index: 5;
+    padding-right: 22%;
+    margin-top: 10%;
+}
+#zen-requirements {
+    margin-top: 10%;
+    margin-left: -3%;
+    border-radius: 0 40px 40px 0px;
+}
+#zen-summary > p {
+    font-size: 12px;
+    text-align: right;
+}
