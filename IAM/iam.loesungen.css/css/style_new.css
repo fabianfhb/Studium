@@ -1,0 +1,7 @@
+#toolBar, #navigationBar {	
+		
+	font-family: "Avenir Black";
+	text-transform: uppercase;
+	color: rgb(128,128,128);
+	background-image: linear-gradient(#333333 0%, #000000 100%);
+}

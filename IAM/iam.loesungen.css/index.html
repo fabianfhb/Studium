@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>CSS3 Einzelne Gestaltungselemente</title>
+		<meta name="description" content="Konzipieren Sie eine geeignete Dokumentenstruktur für die nachfolgende Ansicht unter
+		Berücksichtigung des in der Lerneinheit vermittelten Stoffs und unter Ausschöpfung der Ausdrucksmittel von HTML5.">
+		<meta name="author" content="Fabian Ullmann, Christian Herb">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<div id="naviBack">
+			<div id="btnBack">
+				<p>
+					zur&uuml;ck
+				</p>
+			</div>
+		</div>
+
+		<div id="viewport">
+
+			<div class="topBar">
+				<h1>Die Umsiedlerin</h1>
+			</div>
+
+			<ul id="verticalScrollView">
+
+				<li id="stZeitdokumte" class="bgDark">
+					<div class="topBar">
+						<h2>Zeitdokumente</h2>
+					</div>
+					<figure>
+						<img src="img/imgZeitdokumente.jpg" alt="" />
+						<figcaption>
+							Programmheft zur Urauff&uuml;hrung
+						</figcaption>
+					</figure>
+					<div class="bottomBar">
+						&nbsp;
+					</div>
+				</li>
+
+				<li>
+					<section id="stBilder" class="bgDark">
+						<figure>
+							<img src="img/imgGal1.jpg" alt=""/>
+							<img src="img/imgGal2.jpg" alt=""/>
+						</figure>
+						<div class="clsIcon"></div>
+					</section>
+
+					<section id="stKommentar" class="bgBlue">
+
+						<article>
+							<h2>"Die Umsiedlerin oder das Leben auf dem Lande"</h2>
+							<p>
+								Heiner M&uuml;llers St&uuml;ck spannt einen historischen Bogen von der Bodenreform 1945 bis zur Kollektivierung und Bildung der Landwirtschaftlichen ....
+							</p>
+
+						</article>
+						<div class="postIcon">
+							<p>Weiter lesen...</p>
+						</div>
+
+					</section>
+				</li>
+				<li id="stTextauszug" class="bgPaper">
+					<div class="topBar">
+						<h2>Textauszug</h2>
+					</div>
+
+					<ul>
+						<li class="note">
+							14
+						</li>
+						<li class="note">
+							Kate
+						</li>
+						<li class="note">
+							Niet, Fondrak
+						</li>
+						<li>
+							<span class="speaker">Fondrak</span>&nbsp;<span class="speakerText">Ich geh zum Amerikaner. Gehst Du mit?</span>
+						</li>
+						<li>
+							<span class="speaker">Niet</span>&nbsp;<span class="speakerText">Ich bleib wo ich was krieg.</span>
+						</li>
+						<li>
+							<span class="speaker">Fondrak</span>&nbsp;<span class="speakerText">Ich geh zum Amerikaner. Gehst Du mit?</span>
+						</li>
+						<li class="note">
+							Pause
+						</li>
+					</ul>
+					<div class="bottomBar">
+						<div class="interactionContainer">
+							<div class="postIcon">
+								&nbsp;
+							</div>
+							<a href="">weiter lesen</a>
+						</div>
+					</div>
+				</li>
+
+				<li id="stKommentarMedienVerweis" class="stMedienverweis bgDark">
+					<div class="topBar">
+						<div class="postIcon">
+							&nbsp;
+						</div>
+						<a href=""><h2>Kommentar</h2></a>
+					</div>
+					<div class="content">
+						<ul>
+							<li>
+								Hochschule f&uuml;r &Ouml;konomie
+							</li>
+						</ul>
+					</div>
+				</li>
+
+				<li id="stFilmeUndAudioMedienVerweis" class="stMedienverweis bgDark">
+					<div class="topBar">
+						<div class="interactionContainer">
+							<div class="postIcon">
+								&nbsp;
+							</div>
+							<a href=""><h2>Filme und Audio</h2></a>
+						</div>
+					</div>
+					<div class="content">
+						<ul>
+							<li>
+								&Uuml;ber Tiere und Menschen
+							</li>
+							<li>
+								Demo Alexanderplatz 1989
+							</li>
+						</ul>
+					</div>
+				</li>
+
+				<li id="stMehrDazuMedienVerweis" class="stMedienverweis bgTransparent">
+					<div class="topBar">
+						<h2>Mehr dazu:</h2>
+					</div>
+
+					<div class="content">
+						<ul>
+							<li>
+								Ort
+							</li>
+						</ul>
+					</div>
+				</li>
+
+			</ul>
+
+			<nav id="navigationBar">
+				<ul>
+					<li class="archivLink">
+						<a href="/">Archiv</a>
+					</li>
+					<li>
+						<a href="/">Werk</a>
+					</li>
+					<li>
+						<a href="/">Zeit</a>
+					</li>
+					<li>
+						<a href="/">Ort</a>
+					</li>
+					<li>
+						<a href="/mehr">&gt;&gt;</a>
+					</li>
+				</ul>
+			</nav>
+	</body>
+</html>
