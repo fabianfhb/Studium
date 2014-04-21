@@ -1,72 +1,57 @@
+/**
+ * 	Stand: 21.04.2014, 12:54 Uhr
+ * 	CSS lint found 0 errors and 0 warnings.
+ */
 
 
-#toolBar, #navigationBar {	
+.bar {	
 	position: fixed;
+	width: 100%;
 	z-index: 2;
 }
 
-#toolBar, #navigationBar{
-	width: 100%;
-}
-
-
-
-
-#toolBar {
+.topBar {
 	height: 30px;
 	top:0;
 }
 
+.bottomBar {	
+	height:50px;
+	bottom: 0;
+}
 
 
-
-#mainView {
+.view {
 	z-index: 1;
 	overflow:hidden;
-	background-color: pink;
 	position: absolute;
 	top:30px;
 	bottom:50px;
 }
 
 
-#mainViewTitle {
-	height: 42.5px;
-	background-color: yellow;
-	position: fixed;
-}
-
-#mainViewTitle > * {
-	bottom:0px;
+.bottomOriented {
+	bottom:0;
 	position: absolute;
 }
-#mainViewContent {
-	background-color: green;
-	height: 340px;
-	top:57.5px;
-	position: relative;
+.view > .titleBar {
+	background-color: pink;
+	height: 42.5px;
+	width: 100%;
+	position: fixed;
+	
 }
 
-
-.verticalSwiper {
+.view > .verticalSwiper {
+	height: 340px;
+	top:85px;
+	position: relative;
 	white-space: nowrap;
 }
 
-.verticalSwiper > * {
+.view > .verticalSwiper > div {
 	display: inline-block;
 	vertical-align: top;
 	
 }
 
-.component {
-	width: 360px;
-	height: 120px;
-	margin: 15px;
-	background-color: blue;
-}
-
-
-#navigationBar {
-	height:50px;
-	bottom: 0;
-}
