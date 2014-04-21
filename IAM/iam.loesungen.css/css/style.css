@@ -95,7 +95,6 @@ a {
 }
 
 #viewport {
-
 	background-color: #333333;
 	position: absolute;
 	z-index: 1;
@@ -151,7 +150,6 @@ ul#verticalScrollView > li {
 }
 
 #stBilder {
-	
 	display:inline-block;
 	max-width:450px;
 	width:auto;
