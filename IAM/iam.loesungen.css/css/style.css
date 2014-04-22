@@ -247,6 +247,10 @@ figcaption {
 	width: 180px;
 }
 
+/*
+ * Wiederholung der Klasse topBar
+ */
+
 .topBar {
 	text-transform: uppercase;
 }
