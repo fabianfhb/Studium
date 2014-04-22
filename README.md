@@ -3,7 +3,7 @@ Studium
 
 Repository for all study projects
 
-WP - Folder for "Webprogrammierung"
-OOP - Folder for "Framework & Patterns"
-IAM - Folder for "Internetanwendungen für mobile Endgeräte"
-ISP - Folder for "Internet-Server-Programmierung"
+WP - Folder for "Webprogrammierung" <br>
+OOP - Folder for "Framework & Patterns" <br>
+IAM - Folder for "Internetanwendungen für mobile Endgeräte" <br>
+ISP - Folder for "Internet-Server-Programmierung" <br>

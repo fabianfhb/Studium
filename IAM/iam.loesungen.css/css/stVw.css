@@ -1,0 +1,100 @@
+
+.bar {
+	text-transform: uppercase;
+	color: rgb(128,128,128);
+	background-image: linear-gradient(#333333 0%, #000000 100%);
+	width: 100%;
+	position: fixed;
+	padding-left: 10px;
+	z-index: 2;	
+}
+
+
+.topBar {
+	font-family: "AvenirBlack";
+	font-size: 13.5px;
+	height: 30px;
+	top:0;
+}
+
+.navBtn {
+	display: inline-block;
+	margin-top: 8.25px;
+	padding-left: 20px;
+	background-image: url('img/Back01.png');
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.bottomBar {
+	font-family: "AvenirRoman";
+	font-size: 20px;
+	height:50px;
+	bottom: 0;
+}
+
+.bottomBar > nav {
+	margin-top: 15px;
+}
+
+.bottomBar > nav > a {
+	height:20px;
+	padding-right: 10px;
+	margin-right: 7px;
+	border-right: 3px solid;
+	}
+	
+.bottomBar > nav > a:active {
+	font-family: "AvenirBlack";
+	color: white;
+	border-color: rgb(128,128,128);
+	}
+
+.bottomOriented {
+	bottom:0;
+	position: absolute;
+}
+
+.view {
+	min-width: 100%;
+	background-color: #333333;
+	z-index: 1;
+	overflow:hidden;
+	position: absolute;
+	top:30px;
+	bottom:50px;
+}
+
+.view > .titleBar {
+	font-family: "AvenirMedium";
+	font-size: 30px;
+	text-transform: uppercase;
+	color: rgb(204,204,204);
+	
+	height: 42.5px;
+	padding: 20px 0 0 20px;
+	width: 100%;
+	position: fixed;
+	
+}
+
+.view > .horizontalSwipwer {
+	height: 340px;
+	top:85px;
+	position: relative;
+	white-space: nowrap;
+}
+
+.view > .horizontalSwipwer > div {
+	display: inline-block;
+	vertical-align: top;
+	
+}
+
+.view > .horizontalSwipwer > div > div {
+	display: block;
+	}
+	
+	
+
