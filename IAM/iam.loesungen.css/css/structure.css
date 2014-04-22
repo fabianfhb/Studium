@@ -35,21 +35,20 @@
 	position: absolute;
 }
 .view > .titleBar {
-	background-color: pink;
 	height: 42.5px;
 	width: 100%;
 	position: fixed;
 	
 }
 
-.view > .verticalSwiper {
+.view > .horizontalSwipwer {
 	height: 340px;
 	top:85px;
 	position: relative;
 	white-space: nowrap;
 }
 
-.view > .verticalSwiper > div {
+.view > .horizontalSwipwer > div {
 	display: inline-block;
 	vertical-align: top;
 	
