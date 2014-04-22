@@ -25,14 +25,6 @@
 	src: url('font/Marion-Regular.ttf') format('truetype');
 }
 
-.bar {
-
-	font-family: "AvenirBlack";
-	text-transform: uppercase;
-	color: rgb(128,128,128);
-	background-image: linear-gradient(#333333 0%, #000000 100%);
-}
-
 /**
  * 	allgemeingültige Styles der Einzelkomponenten
  *
@@ -43,12 +35,15 @@
  h2 {
 	max-height: 40px;
 	font-family: inherit;
-	font-size: 20px;
+	font-size: inherit;
 }
 .bgDark {
 	background-color: #333333;
 }
 
+.bgTransparent {
+	border: 1px dashed;
+}
 .bgLight, .bgPaper {
 	background-color: rgb(240,240,240);
 }
@@ -62,7 +57,8 @@
 	overflow: hidden;
 	padding: 10px;
 	display: inline-block;
-	box-shadow: 2px 2px 5px #888888;
+	box-shadow: 2px 2px 5px #111111;
+	white-space: normal;
 }
 
 .componentTitleBar {
@@ -158,6 +154,8 @@
 	box-shadow: none;
 }
 .Einfuehrungstext > .inner{	
+	min-width: 270px;
+	max-width: 270px;
 	padding: 15px 15px 10px 15px;
 	margin: 0 15px 15px 15px;
 	background-color: rgb(41,170,225);
@@ -187,6 +185,7 @@
 .Einfuehrungstext article > .titleBar{
 	max-height: 40px;
 	font-family: "MarionBold";
+	font-size: 20px;
 	margin-bottom: 20px;
 }
 
@@ -358,4 +357,35 @@
 
 .KomFilAud > .componentContent > p:last-child {
 	border-bottom: none;
+}
+
+
+/**
+ * 	Styles für Einzelelement: MehrDazuUnter
+ */
+
+.MehrDazuUnter {
+	width: 195px;
+	max-width: 195px;
+	padding-right:5px;
+	color: rgb(179,179,179);
+	border: 1px dashed;
+	
+}
+.MehrDazuUnter > .componentTitleBar {
+	font-family:"AvenirMedium";
+	font-size: 15px;
+}
+.MehrDazuUnter > .componentContent {
+	font-family: "AvenirBlack";
+	font-size: 20px;
+}
+.MehrDazuUnter > .componentContent > p {
+	border-bottom: 1px dashed;
+	padding: 10px 0 10px 0;
+}
+
+.MehrDazuUnter > .componentContent > p:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
 }
