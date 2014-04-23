@@ -1,0 +1,394 @@
+/**
+ * 	Einbinden der Schirftfamilien
+ */
+
+@font-face {
+	font-family:'AvenirMedium';
+	src: url('font/Avenir-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family:'AvenirBlack';
+	src: url('font/Avenir-Black.ttf') format('truetype');
+}
+@font-face {
+	font-family:'AvenirRoman';
+	src: url('font/Avenir-Roman.ttf') format('truetype');
+}
+
+@font-face {
+	font-family:'MarionBold';
+	src: url('font/Marion-Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family:'MarionRegular';
+	src: url('font/Marion-Regular.ttf') format('truetype');
+}
+
+/**
+ * 	allgemeing��ltige Styles der Einzelkomponenten
+ *
+ *  .component 			- Definitionen die alle Einzelkomponenten gemeinsam haben
+ *  .titleBar	- Font ist bei allen gleich
+ */
+
+ h2 {
+	max-height: 40px;
+	font-family: inherit;
+	font-size: inherit;
+}
+.bgDark {
+	background-color: #333333;
+}
+
+.bgTransparent {
+	border: 1px dashed;
+}
+.bgLight, .bgPaper {
+	background-color: rgb(240,240,240);
+}
+
+.bgPaper {
+	background-image: url('img/BackgroundMerkliste.png');
+}
+
+.component {
+	margin: 15px;
+	overflow: hidden;
+	padding: 10px;
+	display: inline-block;
+	box-shadow: 2px 2px 5px #111111;
+	white-space: normal;
+}
+
+.titleBar {
+	padding-bottom: 9px;
+	border-bottom: 1px dashed;
+	text-transform: uppercase;
+	font-family: "AvenirMedium";
+	font-size: 20px;
+	font-style: normal;
+}
+
+.weiterLesen {
+	background-position: 0 0;
+	padding-left: 25px;
+}
+
+.btnKreuz, .btnKringel, .btnPfeilBlau, .btnPfeilWeiss, .bottomLine{
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+}
+
+.btnKreuz {
+
+	background-image: url('img/Kreuz01.png');
+}
+
+.btnKringel {
+	background-image: url('img/Kringel01.png');
+}
+
+.btnPfeilBlau {	
+	background-image: url('img/Pfeil01.png');
+}
+
+.btnPfeilWeiss {
+	background-image: url('img/Pfeil_weiss01.png');
+	
+}
+
+.bottomLine {
+	background-image: url('img/Strich01.png');
+	background-position: bottom;
+	
+}
+
+/**
+ * 	Styles f��r das Einzelelement: Zeitdokument
+ */
+
+.Zeitdokumente {
+	min-width: 180px;
+	max-width: 180px;
+	max-height: 280px;
+	padding: 10px;
+	color: rgb(242,242,242);
+}
+
+.Zeitdokumente > .titleBar {
+	border-bottom-color: rgb(242,242,242);
+}
+
+.Zeitdokumente > .componentContent {
+	margin-top: 15px;
+	padding-bottom: 20px;
+}
+
+.Zeitdokumente > .componentContent > figure {
+	max-height: 215px;
+	overflow: hidden;
+}
+
+.Zeitdokumente > .componentContent img {
+	max-height: 175px;
+	width: 100%;
+}
+
+.Zeitdokumente > .componentContent figcaption {
+	font-family: "AvenirRoman";
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+/**
+ * 	Styles f��r das Einzelelement: Einfuehrungstext
+ */
+
+.Einfuehrungstext {
+	color: rgb(255,255,255);
+	background-position: 255px 0;
+	background-size: 30px;
+	padding: 15px 0 0 0;
+	margin: 15px 0 0 0;
+	box-shadow: none;
+}
+.Einfuehrungstext > .inner{	
+	min-width: 270px;
+	max-width: 270px;
+	padding: 15px 15px 10px 15px;
+	margin: 0 15px 15px 15px;
+	background-color: rgb(41,170,225);
+	box-shadow: 2px 2px 5px #111111;
+}
+
+.Einfuehrungstext article {
+	margin-bottom: 15px;
+	min-width: 270px;
+	max-width: 270px;
+	height:130px;
+	max-height:130px;
+	overflow: hidden;
+}
+
+.Einfuehrungstext .weiterLesen {
+	border-bottom: 1px dashed rgb(43,89,120);
+	margin-left:-15px;
+	margin-right:-15px;
+	height:15px;
+	padding-left: 40px;
+	padding-bottom: 9px;
+	background-position: 15px 0;	
+	background-size: 15px;
+}
+
+.Einfuehrungstext .titleBar{
+	overflow:hidden;
+	max-height: 40px;
+	font-family: "MarionBold";
+	font-size: 20px;
+	margin-bottom: 20px;
+	text-transform: none;
+}
+
+.Einfuehrungstext  article > p {
+	font-family: "MarionRegular";
+	font-size: 15px;
+	max-height: 90px;
+	overflow: hidden;
+}
+
+
+/**
+ * 	Styles f��r das Einzelelement;Fotos
+ *
+ */
+
+.Fotos {
+	max-width: 430px;
+	height: 80px;
+	max-height: 80px;
+	padding: 10px;
+	display: inline-block;
+	white-space: nowrap;
+}
+
+.Fotos > figure, .Fotos > .btnKreuz {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.Fotos > figure {
+	max-width: 380px;
+	margin-right: 20px;
+}
+
+.Fotos > figure > img {
+	margin-right: 10px;
+}
+.Fotos > figure > img:nth-child(n+4) {
+	display: none;
+}
+.Fotos > .btnKreuz {
+
+	width: 30px;
+	height: 30px;
+}
+
+/**
+ * 	Styles f��r das Einzelelement:Objekt
+ */
+
+.Objekt {
+	max-width: 280px;
+	max-height: 280px;
+	position: relative;
+}
+
+.Objekt > .componentContent {
+	margin: 25px;
+	max-height: 200px;
+	overflow: hidden;
+}
+
+.Objekt > .componentContent img {
+	height: 100%;
+}
+
+.Objekt > .btnKringel {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	width: 40px;
+	height: 40px;
+}
+
+/**
+ * 	Styles f��r Einzelelement:Merkliste
+ *
+ */
+
+.Merkliste {
+	font-family: "AvenirRoman";
+	font-size: 15px;
+	border-radius: 5px;
+	width: 105px;
+	height: 55px;
+	padding-top: 15px;
+}
+
+.Merkliste > div, .Merkliste > p {
+	float: left;
+}
+
+.Merkliste > .btnKreuz {
+	position: absolute;
+	z-index: 2;
+	height: 17.5px;
+	width: 17.5px;
+}
+
+.Merkliste > .btnKringel {
+	height: 17.5px;
+	width: 17.5px;
+	z-index: 1;
+}
+.Merkliste > p {
+	width: 77.5px;
+	margin-left: 10px;
+}
+
+/**
+ * 	Styles f��r Einzelelement:Textauszug
+ *
+ */
+
+.Textauszug {
+	width: 180px;
+	max-width: 180px;
+	font-family: "MarionRegular";
+	font-size: 15px;
+	color: rgb(63,169,245);
+}
+
+.Textauszug > article > .content {
+	color: rgb(77,77,77);
+	font-style: italic;
+	height: 195px;
+	max-height: 195px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.Textauszug > article ul {
+	margin-top: 10px;
+}
+
+.Textauszug > article .dialog {
+	font-style: normal;
+}
+
+.Textauszug > .weiterLesen {
+	background-size: 15px;
+}
+
+/**
+ * 	Styles f��r Einzelelement: KomFilAud
+ */
+
+.KomFilAud {
+	width: 180px;
+	max-width: 180px;
+}
+.KomFilAud > .titleBar {
+	color: rgb(63,169,245);
+	border-color: rgb(242,242,242);
+	background-position: top right;
+	background-size: 20px;
+}
+.KomFilAud > .componentContent {
+	font-family: "AvenirRoman";
+	font-size: 15px;
+	color: rgb(242,242,242);
+}
+.KomFilAud > .componentContent > p {
+	border-bottom: 1px dashed;
+	border-color: rgb(242,242,242);
+	padding: 10px 0 10px 0;
+}
+
+.KomFilAud > .componentContent > p:last-child {
+	border-bottom: none;
+}
+
+
+/**
+ * 	Styles f��r Einzelelement: MehrDazuUnter
+ */
+
+.MehrDazuUnter {
+	width: 195px;
+	max-width: 195px;
+	padding-right:5px;
+	color: rgb(179,179,179);
+	border: 1px dashed;
+	
+}
+.MehrDazuUnter > .titleBar {
+	font-family:"AvenirMedium";
+	font-size: 15px;
+}
+.MehrDazuUnter > .componentContent {
+	font-family: "AvenirBlack";
+	font-size: 20px;
+}
+.MehrDazuUnter > .componentContent > p {
+	border-bottom: 1px dashed;
+	padding: 10px 0 10px 0;
+}
+
+.MehrDazuUnter > .componentContent > p:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+}

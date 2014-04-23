@@ -55,7 +55,6 @@
 }
 
 .mainView {
-	width: 100%;
 	z-index: 1;
 	position: absolute;
 	top: 30px;
@@ -63,9 +62,12 @@
 }
 
 .view {
+	width: 100%;
 	height: 100%;
 	top:0;
 	left:0;
+	
+	transition: opacity 1s ease-in;
 }
 
 .uebersichtView {
@@ -82,6 +84,7 @@
 	padding: 20px 0 0 20px;
 	width: 100%;
 	position: fixed;
+	border:none;
 }
 
 .uebersichtView > .horizontalSwipwer {
@@ -101,10 +104,14 @@
 }
 
 .detailView {
-	margin: 0px 10px 0 10px;
+	width:100%;
 	position: absolute;
 	overflow-y: scroll;
 }
+
+.detailView > article {
+	margin: 0px 10px 0 10px;
+	}
 
 .detailView .titleBar {
 	font-family: "AvenirBlack";
